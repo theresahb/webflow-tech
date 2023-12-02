@@ -1,26 +1,75 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.partners {
+  animation: animate 5s linear infinite;
+  /* animation-delay: -40s; */
+}
+.testimony {
+  animation: animate 20s linear infinite;
+  animation-delay: -40s;
+}
+
+.white {
+  filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(195deg) brightness(106%) contrast(100%);
+}
+
+.nav-btn:hover {
+  background-color: #fff;
+}
+
+.nav-btn:hover p {
+  color: #180030;
+}
+
+.nav-btn:hover .nav-arrow {
+  rotate: -40deg;
+}
+
+.about-btn:hover {
+  background-color: white;
+}
+
+.about-btn:hover p {
+  color: #180030;
+}
+
+.about-btn:hover div {
+  color: #180030;
+}
+
+.service-btn:hover {
+  background-color: #8000ff10;
+}
+
+.service-btn:hover p {
+  color: #180030;
+}
+
+.service-btn:hover .service-arrow {
+  rotate: -40deg;
+  /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%); */
+}
+
+.service-btn:hover .arrow-img{
+  filter: invert(0%) sepia(97%) saturate(13%) hue-rotate(251deg) brightness(97%) contrast(103%);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100);
   }
-  body {
-    color: white;
-    background: black;
+
+  100% {
+    transform: translateX(-100%);
   }
 }
+
+
