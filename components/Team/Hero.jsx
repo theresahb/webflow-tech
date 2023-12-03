@@ -5,12 +5,12 @@ const Hero = () => {
     return (
         <section>
             <div className="flex justify-between items-center px-4 w-full sx:flex-col sm:flex-col md:px-4 lg:px-14 lg:flex-row">
-                <div className="flex flex-col gap-8 py-24 sx:w-full sm:w-full md:w-full">
+                <div className="flex flex-col gap-8 py-24 w-full">
                     <div className="bg-[#8000ff21] px-4 py-2 w-fit rounded">
                         <h3 className='text-primaryColor font-semibold'>Our team</h3>
                     </div>
                     <div className="flex flex-col gap-6 md:pr-40">
-                        <h1 className='text-secondaryColor font-bold sx:text-3xl sm:text-5xl md:text-6xl lg:text-7xl'>
+                        <h1 className='text-secondaryColor font-bold sx:text-xl sm:text-5xl md:text-6xl lg:text-7xl'>
                             Get to know Our Team
                         </h1>
                     </div>

@@ -46,14 +46,14 @@ const Navbar = () => {
                                             {item.text}
                                         </li>
                                         {activeTab === index && navLinks[activeTab].content && isModalOpen && (
-                                            <div className="absolute top-full -left-10 mt-2 px-8 z-10 w-full lg:flex" >
+                                            <div className="absolute top-10 -left-10 mt-2 px-8 z-10 w-[10rem] lg:flex" >
                                               <div className="flex flex-col gap-2 w-fit bg-white px-2 py-2 rounded-lg">
                                                 {navLinks[activeTab].content && isModalOpen && (
                                                   <ul className='flex flex-col gap-2'>
                                                     {navLinks[activeTab].content.map((submenuItem) => (
                                                         <li key={submenuItem.id}
                                                             className='cursor-pointer rounded transition duration-500 ease-in-out hover:text-primaryColor'>
-                                                            {submenuItem.text}
+                                                            <Link href={submenuItem.link}>{submenuItem.text}</Link>
                                                         </li>
                                                     ))}
                                                   </ul>

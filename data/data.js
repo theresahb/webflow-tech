@@ -43,22 +43,27 @@ export const navLinks = [
             {
                 id: 1,
                 text: 'Home 1',
+                link: '/'
             },
             {
                 id: 2,
                 text: 'Home 2',
+                link: '/'
             },
             {
                 id: 3,
                 text: 'Home 3',
+                link: '/'
             },
             {
                 id: 4,
                 text: 'Home 4',
+                link: '/'
             },
             {
                 id: 5,
                 text: 'Home 5',
+                link: '/'
             },
         ]
     },
@@ -69,26 +74,32 @@ export const navLinks = [
             {
                 id: 1,
                 text: 'About Us',
+                link: '/about-us',
             },
             {
                 id: 2,
                 text: 'Our Values',
+                link: '/our-values',
             },
             {
                 id: 3,
                 text: 'Leadership',
+                link: '/our-team',
             },
             {
                 id: 4,
                 text: 'Why Choose Us',
+                link: '/why-choose-us',
             },
             {
                 id: 5,
                 text: 'Testimonials',
+                link: '/testimonials',
             },
             {
                 id: 6,
                 text: 'FAQ',
+                link: '/faq',
             },
         ]
     },
@@ -109,46 +120,57 @@ export const navLinks = [
             {
                 id: 1,
                 text: 'Home 1',
+                link: '/'
             },
             {
                 id: 2,
                 text: 'Home 2',
+                link: '/'
             },
             {
                 id: 3,
                 text: 'Home 3',
+                link: '/'
             },
             {
                 id: 4,
                 text: 'Home 4',
+                link: '/'
             },
             {
                 id: 5,
                 text: 'Home 5',
+                link: '/'
             },
             {
                 id: 6,
                 text: 'About Us',
+                link: '/about-us',
             },
             {
                 id: 7,
                 text: 'Our Values',
+                link: '/our-values',
             },
             {
                 id: 8,
                 text: 'Leadership',
+                link: '/our-team',
             },
             {
                 id: 9,
                 text: 'Why Choose Us',
+                link: '/why-choose-us',
             },
             {
                 id: 10,
                 text: 'Testimonials',
+                link: '/testimonials',
             },
             {
                 id: 11,
                 text: 'FAQ',
+                link: '/faq',
             },
         ]
     },

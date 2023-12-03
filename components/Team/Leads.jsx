@@ -43,8 +43,8 @@ const Leads = () => {
                     backgroundSize: 'cover',
                 }}>
                     <h1 className='font-bold sm:text-xl md:text-[5rem]'>Improve your</h1>
-                    <h1 className='font-bold pl-24 sm:text-xl md:text-[5rem]'>business with the</h1>
-                    <h1 className='font-bold pl-44 sm:text-xl md:text-[5rem]'>right solutions</h1>
+                    <h1 className='font-bold sx:pl-4 md:pl-24 sm:text-xl md:text-[5rem]'>business with the</h1>
+                    <h1 className='font-bold sx:pl-4 md:pl-44 sm:text-xl md:text-[5rem]'>right solutions</h1>
                 </div>
             </div>
         </div>
