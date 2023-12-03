@@ -18,7 +18,7 @@ const Features = () => {
                             top-notch solutions that exceed your expectations.
                         </p>
                     </div>
-                    <div className="sx:w-[15rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
+                    <div className="sx:w-[13rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
                     style={{
                         backgroundImage: `url(${'/assets/about-logo-home.svg'})`,
                         backgroundRepeat: 'no-repeat',
@@ -33,7 +33,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex sx:flex-col-reverse sx:gap-8 sm:flex-col-reverse sm:gap-8 md:flex-row md:justify-between md:items-center">
-                    <div className="sx:w-[15rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
+                    <div className="sx:w-[13rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
                     style={{
                         backgroundImage: `url(${'/assets/about-logo-home.svg'})`,
                         backgroundRepeat: 'no-repeat',
@@ -64,7 +64,7 @@ const Features = () => {
                             solutions that exceed your expectations.
                         </p>
                     </div>
-                    <div className="sx:w-[15rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
+                    <div className="sx:w-[13rem] sx:my-0 sx:mx-auto sm:w-[18rem] sm:my-0 sm:mx-auto md:w-[30rem]"
                     style={{
                         backgroundImage: `url(${'/assets/about-logo-home.svg'})`,
                         backgroundRepeat: 'no-repeat',
@@ -79,7 +79,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex justify-between items-center sx:flex-col sx:gap-8 sm:flex-col sm:gap-8">
-                    <div className="sx:w-[30rem] sm:w-[40rem] md:w-[30rem]">
+                    <div className="sx:w-[20rem] sm:w-[40rem] md:w-[30rem]">
                         <Image 
                         src={'/assets/author.webp'}
                         width={500}

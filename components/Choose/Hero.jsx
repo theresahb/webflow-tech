@@ -39,7 +39,7 @@ const Hero = () => {
                                 height={60}
                                 className="w-full" />
                             </div>
-                            <p className='text-white text-2xl font-semibold'>Experience <br /> expert team</p>
+                            <p className='text-white sx:text-lg sm:text-2xl font-semibold'>Experience <br /> expert team</p>
                         </div>
                         <div className="flex items-center gap-4 sx:flex-col sx:text-center">
                             <div className="">
@@ -49,7 +49,7 @@ const Hero = () => {
                                 height={60}
                                 className="w-full" />
                             </div>
-                            <p className='text-white text-2xl font-semibold'>Customized <br /> solutions</p>
+                            <p className='text-white sx:text-lg sm:text-2xl font-semibold'>Customized <br /> solutions</p>
                         </div>
                         <div className="flex items-center gap-4 sx:flex-col sx:text-center">
                             <div className="">
@@ -59,7 +59,7 @@ const Hero = () => {
                                 height={60}
                                 className="w-full" />
                             </div>
-                            <p className='text-white text-2xl font-semibold'>Transparent <br /> communication</p>
+                            <p className='text-white sx:text-lg sm:text-2xl font-semibold'>Transparent <br /> communication</p>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const Projects = () => {
                             <h3 className='text-primaryColor font-semibold'>Our Work</h3>
                         </div>
                         <div className="">
-                            <h1 className='text-7xl text-secondaryColor font-extrabold'>
+                            <h1 className='sx:text-4xl md:text-7xl text-secondaryColor font-extrabold'>
                                 Our latest projects
                             </h1>
                         </div>

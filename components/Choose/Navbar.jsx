@@ -56,7 +56,7 @@ const Navbar = () => {
                     </div>
                 </button>
                 <button className="flex lg:hidden outline-none">
-                    <Image src={'/assets/menu-btn.svg'} width={30} height={30} className='white' />
+                    <Image src={'/assets/menu-btn.svg'} width={30} height={30} className='' />
                 </button>
             </div>
         

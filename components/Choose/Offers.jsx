@@ -15,8 +15,8 @@ const Offers = () => {
         <section>
             <div className="flex items-start px-4 py-32 sx:flex-col sx:gap-8 sx:px-4 sm:flex-col sm:gap-8 sm:px-4 md:flex-col md:gap-8 md:px-4 lg:flex-row lg:justify-between lg:gap-12 lg:px-14">
                 <div className="flex flex-col gap-8 sx:w-full sm:w-full md:w-[70%] lg:w-[40%]">
-                    <h1 className="text-5xl text-secondaryColor font-extrabold">We provide a wide range of IT services</h1>
-                    <p className="text-paragraphGray font-semibold">
+                    <h1 className="sx:text-3xl sm:text-5xl text-secondaryColor font-extrabold">We provide a wide range of IT services</h1>
+                    <p className="text-paragraphGray font-semibold sx:text-sm sm:text-base">
                         Your expertise in IT consulting offers us a distinctive advantage that many other consulting firms lack. 
                         This specialized knowledge allows us to provide our clients with tailored solutions and insights from the competition.
                     </p>
