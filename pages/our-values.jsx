@@ -1,9 +1,13 @@
 import React from 'react'
 import Value from '../components/Values/Value'
+import MetaHead from '../shared/MetaHead/MetaHead'
 
 const Values = () => {
   return (
-    <Value />
+    <div className="">
+      <MetaHead title='Our Values' />
+      <Value />
+    </div>
   )
 }
 

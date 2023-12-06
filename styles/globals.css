@@ -62,6 +62,11 @@
   filter: invert(0%) sepia(97%) saturate(13%) hue-rotate(251deg) brightness(97%) contrast(103%);
 }
 
+.menu-text:active .menu-arrow {
+  rotate: 180deg;
+  /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%); */
+}
+
 @keyframes animate {
   0% {
     transform: translateX(100);

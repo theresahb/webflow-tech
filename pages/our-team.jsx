@@ -1,9 +1,13 @@
 import React from 'react'
 import Team from '../components/Team/Team'
+import MetaHead from '../shared/MetaHead/MetaHead'
 
 const OurTeam = () => {
   return (
-    <Team />
+    <div className="">
+      <MetaHead title='Our Team' />
+      <Team />
+    </div>
   )
 }
 

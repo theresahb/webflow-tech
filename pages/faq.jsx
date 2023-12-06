@@ -1,9 +1,13 @@
 import React from 'react'
 import Frequent from '../components/FAQ/Faq'
+import MetaHead from '../shared/MetaHead/MetaHead'
 
 const FrequentQuestions = () => {
   return (
-    <Frequent />
+    <div className="">
+      <MetaHead title='FAQ' />
+      <Frequent />
+    </div>
   )
 }
 

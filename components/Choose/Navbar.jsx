@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav>
             <div className="flex justify-between items-center w-full border-b border-gray-200 py-8 pr-8 pl-4 sx:px-4 md:pl-8 lg:pr-0 lg:pl-12 lg:py-0">
                 <div className="">
-                    <Image src={'/assets/home-logo.svg'} width={50} height={50} className='w-[7rem]' />
+                    <Image src={'/assets/logo.svg'} width={50} height={50} className='w-[7rem]' />
                 </div>
                 <ul className="hidden items-center gap-12 lg:flex">
                     {navLinks.map((item, index) => {

@@ -1,9 +1,13 @@
 import React from 'react'
 import Choose from '../components/Choose/Choose'
+import MetaHead from '../shared/MetaHead/MetaHead'
 
 const ChooseUs = () => {
     return (
-        <Choose />
+        <div className="">
+            <MetaHead title='Why Choose Us' />
+            <Choose />
+        </div>
     )
 }
 
