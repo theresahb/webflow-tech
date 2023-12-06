@@ -1,5 +1,5 @@
 import React from 'react'
-import { footerLinks } from '../../data/data'
+import { footerLinks } from '../data/data'
 import Image from 'next/image'
 
 const Footer = () => {

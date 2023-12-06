@@ -8,7 +8,7 @@ import Build from './Build'
 import Projects from './Projects'
 import Testimony from './Testimony'
 import Contact from './Contact'
-import Footer from './Footer'
+import Footer from '../../shared/Footer'
 
 const HomePage = () => {
     return (

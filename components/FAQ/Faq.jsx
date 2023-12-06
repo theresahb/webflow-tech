@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import Questions from './Questions'
-import Footer from '../Home/Footer'
+import Footer from '../../shared/Footer'
 
 const Frequent = () => {
     return (

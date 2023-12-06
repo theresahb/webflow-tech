@@ -402,22 +402,22 @@ export const footerLinks = [
             {
                 id: 1,
                 text: 'About Us',
-                link: '/',
+                link: '/about-us',
             },
             {
                 id: 2,
                 text: 'Pricing',
-                link: '/',
+                link: '/pricing',
             },
             {
                 id: 3,
                 text: 'Career',
-                link: '/',
+                link: '/career',
             },
             {
                 id: 4,
                 text: 'Services',
-                link: '/',
+                link: '/services',
             },
         ]
     },
@@ -428,22 +428,22 @@ export const footerLinks = [
             {
                 id: 1,
                 text: 'Blog',
-                link: '/',
+                link: '/blog',
             },
             {
                 id: 2,
                 text: 'Case Studies',
-                link: '/',
+                link: '/case-studies',
             },
             {
                 id: 3,
                 text: 'Blog Detail',
-                link: '/',
+                link: '/blod-detail',
             },
             {
                 id: 4,
                 text: 'FAQ',
-                link: '/',
+                link: '/faq',
             },
         ]
     },

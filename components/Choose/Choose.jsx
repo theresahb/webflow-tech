@@ -3,7 +3,7 @@ import Hero from './Hero'
 import About from './About'
 import Offers from './Offers'
 import Contact from '../Home/Contact'
-import Footer from '../Home/Footer'
+import Footer from '../../shared/Footer'
 import Projects from './Projects'
 
 const Choose = () => {

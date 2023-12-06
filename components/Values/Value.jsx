@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Advantages from './Advantages'
 import Testimony from './Testimony'
-import Footer from '../Home/Footer'
+import Footer from '../../shared/Footer'
 
 const Value = () => {
   return (

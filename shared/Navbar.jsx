@@ -33,7 +33,7 @@ const Navbar = ({ liColor, logo, borderColor, menuButton, menuBorder }) => {
                     <div className="">
                         <Image src={logo} width={50} height={50} className='w-[7rem]' />
                     </div>
-                    <ul className="hidden items-center gap-12 lg:flex">
+                    <ul className="sx:hidden items-center gap-12 lg:flex">
                         {navLinks.map((item, index) => {
                             return (
                                 <div className=' relative'>
@@ -72,7 +72,7 @@ const Navbar = ({ liColor, logo, borderColor, menuButton, menuBorder }) => {
                             )
                         })}
                     </ul> 
-                    <button className="nav-btn hidden justify-between items-center gap-8 bg-primaryColor px-8 py-8 transition ease-linear duration-500 delay-100 lg:flex">
+                    <button className="nav-btn sx:hidden justify-between items-center gap-8 bg-primaryColor px-8 py-8 transition ease-linear duration-500 delay-100 lg:flex">
                         <p className='text-white font-medium'>Get in Touch</p>
                         <div className="nav-arrow transition ease-linear duration-500 delay-100">
                             <Image src={'/assets/white-arrow.png'} width={10} height={10} />
