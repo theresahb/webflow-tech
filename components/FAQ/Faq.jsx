@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Hero from './Hero'
 import Questions from './Questions'
 import Footer from '../Home/Footer'
 
@@ -7,7 +7,7 @@ const Frequent = () => {
     return (
         <main>
             <div className="flex flex-col">
-                <Navbar />
+                <Hero />
                 <Questions />
                 <Footer />
             </div>

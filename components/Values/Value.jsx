@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Hero from './Hero'
 import Advantages from './Advantages'
 import Testimony from './Testimony'
@@ -9,7 +8,6 @@ const Value = () => {
   return (
     <main>
         <div className="flex flex-col">
-            <Navbar />
             <Hero />
             <Advantages />
             <Testimony />

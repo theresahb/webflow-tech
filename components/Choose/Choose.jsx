@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Choose/Navbar'
 import Hero from './Hero'
 import About from './About'
 import Offers from './Offers'
@@ -11,7 +10,6 @@ const Choose = () => {
   return (
     <main>
         <div className="flex flex-col">
-            <Navbar />
             <Hero />
             <About />
             <Offers />

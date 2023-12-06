@@ -15,7 +15,7 @@ const About = () => {
                                 and empowering businesses to navigate the digital age with confidence.
                             </p>
                         </div>
-                        <div className="flex flex-col gap-6 sx:flex-row sm:flex-row sm:w-full md:flex-row lg:flex-col lg:w-[40%]">
+                        <div className="flex gap-6 sx:flex-col sx:w-full sm:flex-row lg:flex-col lg:w-[40%]">
                             <div className="flex items-center sx:gap-4 md:gap-8 lg:border-b lg:border-gray-200 pb-6 sx:flex-col sx:items-start md:border-0 md:flex-col md:items-start lg:flex-row">
                                 <h1 className="text-secondaryColor font-extrabold sx:text-4xl md:text-7xl">12+</h1>
                                 <p className="text-paragraphGray font-semibold sx:text-sm sm:text-base">Decades of experience in software development</p>

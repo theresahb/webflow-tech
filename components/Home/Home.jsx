@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Hero from './Hero'
 import Partners from './Partners'
 import About from './About'
 import Services from './Services'
@@ -14,7 +14,7 @@ const HomePage = () => {
     return (
         <main>
             <div className="flex flex-col">
-                <Navbar />
+                <Hero />
                 <Partners />
                 <About />
                 <Services />

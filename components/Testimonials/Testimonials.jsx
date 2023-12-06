@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Hero from './Hero'
 import Testimonies from './Testimonies'
 import Footer from '../Home/Footer'
 
@@ -7,7 +7,7 @@ const Testimonials = () => {
     return (
         <main>
             <div className="flex flex-col">
-                <Navbar />
+                <Hero />
                 <Testimonies />
                 <Footer />
             </div>

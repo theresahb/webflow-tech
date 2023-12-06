@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Hero from './Hero'
 import Build from '../Home/Build'
 import Projects from '../Home/Projects'
 import Testimony from '../Home/Testimony'
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <main>
         <div className="flex flex-col">
-            <Navbar />
+            <Hero />
             <Culture />
             <Features />
             <Executives />
