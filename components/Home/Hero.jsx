@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import { navLinks } from '../../data/data'
-import Link from 'next/link'
 import Navbar from '../../shared/Navbar'
 
 const Hero = () => {

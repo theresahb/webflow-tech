@@ -82,7 +82,7 @@ const Navbar = ({ liColor, logo, borderColor, menuButton, menuBorder }) => {
                         <Image src={'/assets/menu-btn.svg'} width={30} height={30} className={`${menuButton}`} />
                     </button>
                     {menuOpen && (
-                        <div className="flex flex-col gap-6 sx:px-2 sm:px-4 sx:py-2 sm:py-4 lg:hidden w-[80%] bg-white absolute top-0 left-0 z-10 h-full min-h-full">
+                        <div className="flex flex-col gap-6 sx:px-2 sm:px-4 sx:pt-4 sx:pb-2 sm:py-4 lg:hidden w-[80%] bg-white absolute top-0 left-0 z-10 h-full min-h-full">
                             <div className="flex justify-between items-center">
                                 <div className="">
                                     <Image src={'/assets/logo.svg'} width={50} height={50} className='w-[7rem]' />
