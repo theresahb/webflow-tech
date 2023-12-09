@@ -738,3 +738,61 @@ export const testimonials = [
         name: 'Daniel Mitchell',
     },
 ]
+
+export const consult = [
+    {
+        id: 1,
+        offer: 'Web Development',
+        link: '/',
+    },
+    {
+        id: 2,
+        offer: 'Website Maintenance',
+        link: '/',
+    },
+    {
+        id: 3,
+        offer: 'IT Consultancy',
+        link: '/',
+    },
+    {
+        id: 4,
+        offer: 'Q&A Testing',
+        link: '/',
+    },
+    {
+        id: 5,
+        offer: 'Account & Security',
+        link: '/',
+    },
+    {
+        id: 6,
+        offer: 'Digital Consulting',
+        link: '/',
+    },
+    {
+        id: 7,
+        offer: 'Custom Software Development',
+        link: '/',
+    },
+    {
+        id: 8,
+        offer: 'Data Analytics and Insights',
+        link: '/',
+    },
+    {
+        id: 9,
+        offer: 'Mobile App Development',
+        link: '/',
+    },
+    {
+        id: 10,
+        offer: 'Cybersecurity Solutions',
+        link: '/',
+    },
+    {
+        id: 11,
+        offer: 'Cloud Services and Migration',
+        link: '/',
+    },
+]

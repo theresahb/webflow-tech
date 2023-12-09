@@ -13,7 +13,7 @@ const Contact = () => {
             backgroundAttachment: 'fixed'
         }}>
             <div className="flex flex-col justify-center items-center gap-4 text-white px-14 py-32">
-                <h1 className='text-8xl font-bold sx:text-5xl'>Let’s build something different</h1>
+                <h1 className='font-bold sx:text-5xl md:text-8xl'>Let’s build something different</h1>
                 <p className='text-lg font-medium'>
                     Take the first step towards a brighter future and supercharge your business with cutting-edge technologies, expert guidance, 
                     and unparalleled support.

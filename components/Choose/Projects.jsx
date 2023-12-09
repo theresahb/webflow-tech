@@ -1,8 +1,63 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { chooseProjects } from '../../data/data'
 import Image from 'next/image'
 
 const Projects = () => {
+    const [current, setCurrent] = useState([]);
+
+    useEffect(() => {
+        // Set the initial projects to display (first two)
+        setCurrent(chooseProjects.slice(0, 1).flatMap(project => project.projects));
+    }, []);
+
+    const handleNextClick = () => {
+        // Get the current index and calculate the next index
+        const currentIndex = chooseProjects.findIndex(project => project.projects === current);
+        const nextIndex = (currentIndex + 2) % chooseProjects.length;
+        // Set the next set of projects to display
+        setCurrent(chooseProjects[nextIndex].projects);
+    };
+
+    
+    // const [current, setCurrent] = useState(0)
+
+    // useEffect(() => {
+    //     setCurrent(current === chooseProjects.splice(0, 1) ? 0 : chooseProjects.splice(2, 3))
+    // }, [current])
+
+    // handleSlideChange = (index) => {
+    //     setCurrent(index)
+    // }
+
+    
+
+// //   const handleSlideChange = () => {
+// //     // Update projects on slide change (next two)
+// //     setCurrentProjects((prevProjects) => {
+// //       const currentIndex = chooseProjects.findIndex(project => project.projects === prevProjects[0]);
+// //       const nextProjects = chooseProjects[(currentIndex + 1) % chooseProjects.length].projects;
+// //       return nextProjects;
+// //     });
+// //   };
+
+
+
+//   const [current, setCurrent] = useState([]);
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   useEffect(() => {
+//     // Set the initial projects to display (first two)
+//     setCurrent(chooseProjects[currentIndex].projects);
+//   }, [currentIndex]);
+
+//   const handleNextClick = () => {
+//     // Calculate the next index to display
+//     const nextIndex = (currentIndex + 2) % chooseProjects.length;
+//     // Set the next set of projects to display and update the current index
+//     setCurrent(chooseProjects[nextIndex].projects);
+//     setCurrentIndex(nextIndex);
+//   };
+
     return (
         <section>
             <div className="flex justify-between items-center px-14 py-32">
@@ -25,10 +80,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 w-full overflow-hidden">
-                    {chooseProjects.map((project) => {
-                        return (
-                            <div key={project.id} className="flex gap-4">
-                                {project.projects.map((item) => (
+                    {current.map((item, index) => (
+                        
                                     <div key={item.id} className="flex flex-col justify-between gap-4">
                                         <div className="overflow-hidden">
                                             <Image 
@@ -47,10 +100,9 @@ const Projects = () => {
                                             <p className='text-lg text-primaryColor'>{item.category2}</p>
                                         </div>
                                     </div>
-                                ))}
-                            </div>
-                        )
-                    })}
+                        
+                    ))}
+                    <p onClick={handleNextClick}>next</p>
                 </div>
             </div>
         </section>
