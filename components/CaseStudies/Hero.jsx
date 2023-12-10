@@ -14,7 +14,7 @@ const Hero = () => {
                 <Navbar liColor={liColor} borderColor={borderColor} logo={logo} menuBorder={menuBorder} />
                 <section
                     style={{
-                    backgroundImage: `url(${'/assets/ellipse.png'})`,
+                    backgroundImage: `url(${'/assets/dark-ellipse.png'})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundSize: 'cover'

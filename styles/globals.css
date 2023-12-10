@@ -45,6 +45,18 @@
   color: #180030;
 }
 
+/* .build-btn:hover {
+  background-color: white;
+} */
+
+.build-btn:hover p {
+  color: #ffffff;
+}
+
+.build-btn:hover div {
+  color: #ffffff;
+}
+
 .service-btn:hover {
   background-color: #8000ff10;
 }

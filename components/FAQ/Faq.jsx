@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Questions from './Questions'
 import Footer from '../../shared/Footer'
+import Build from '../Values/Build'
 
 const Frequent = () => {
     return (
@@ -9,6 +10,7 @@ const Frequent = () => {
             <div className="flex flex-col">
                 <Hero />
                 <Questions />
+                <Build />
                 <Footer />
             </div>
         </main>

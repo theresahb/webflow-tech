@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Leads from './Leads'
 import Questions from './Questions'
 import Footer from '../../shared/Footer'
+import Build from '../Values/Build'
 
 const Team = () => {
   return (
@@ -11,6 +12,7 @@ const Team = () => {
             <Hero />
             <Leads />
             <Questions />
+            <Build />
             <Footer />
         </div>
     </main>

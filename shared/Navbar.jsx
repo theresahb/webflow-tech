@@ -29,7 +29,7 @@ const Navbar = ({ liColor, logo, borderColor, menuButton, menuBorder }) => {
     return (
         <header>
             <nav>
-                <div className={`flex justify-between items-center w-full border-b border-[${borderColor}] py-8 pr-8 pl-4 sx:px-4 md:pl-8 lg:pr-0 lg:pl-12 lg:py-0`}>
+                <div className={`flex justify-between items-center w-full border-b border-${borderColor} py-8 pr-8 pl-4 sx:px-4 md:pl-8 lg:pr-0 lg:pl-12 lg:py-0`}>
                     <div className="">
                         <Image src={logo} width={50} height={50} className='w-[7rem]' />
                     </div>

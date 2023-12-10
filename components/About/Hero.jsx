@@ -3,7 +3,7 @@ import Navbar from '../../shared/Navbar'
 
 const Hero = () => {
     const liColor = 'text-secondaryColor';
-    const borderColor = 'gray-200'; 
+    const borderColor = '[gray-200]'; 
     const logo = '/assets/logo.svg';
     const menuBorder = 'gray-200'
 

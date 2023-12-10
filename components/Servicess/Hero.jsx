@@ -10,15 +10,15 @@ const Hero = () => {
 
     return (
         <header>
-            <div className="bg-white"
-            style={{
-                backgroundImage: `url(${'/assets/ellipse.png'})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover'
-            }}>
+            <div className="bg-white">
                 <Navbar liColor={liColor} borderColor={borderColor} logo={logo} menuBorder={menuBorder} />
-                <section>
+                <section
+                    style={{
+                    backgroundImage: `url(${'/assets/dark-ellipse.png'})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover'
+                }}>
                     <div className="flex justify-between items-center w-full py-24 sx:flex-col sx:gap-8 md:px-4 md:flex-row md:gap-0 lg:px-14">
                         <div className="flex flex-col gap-4 sx:px-4 sm:px-8 sx:w-full md:px-0 md:w-[40%]">
                             <h1 className='text-secondaryColor sx:text-5xl lg:text-6xl font-bold'>Services</h1>

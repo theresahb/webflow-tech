@@ -4,7 +4,7 @@ import Navbar from '../../shared/Navbar'
 
 const Hero = () => {
     const liColor = 'text-white';
-    const borderColor = '#ffffff2c'; 
+    const borderColor = '[#ffffff2c]'; 
     const logo = '/assets/home-logo.svg';
     const menuButton = 'white'
 
