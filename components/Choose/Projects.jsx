@@ -29,8 +29,8 @@ const Projects = () => {
 
     return (
         <section>
-            <div className="flex sx:px-4 lg:px-14 py-32">
-                <div className="flex flex-col gap-8">
+            <div className="flex sx:flex-col sx:gap-8 md:gap-0 md:flex-row sx:px-4 lg:px-14 py-32">
+                <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-4 w-[70%]">
                         <div className="bg-[#8000ff21] px-4 py-2 w-fit rounded">
                             <h3 className='text-primaryColor font-semibold'>Our Work</h3>
@@ -42,7 +42,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <Link href={'/case-studies'}>
-                        <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
+                        <button className="about-btn flex justify-between items-center gap-4 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
                             <p>View More</p>
                             <div className="">●</div>
                         </button>
@@ -51,7 +51,7 @@ const Projects = () => {
                 <div className="flex flex-col gap-12 w-full relative">
                     <div className="">
                         {chooseProjects.slice(currentIndex, currentIndex + itemsPerPage).map((project) => (
-                            <div key={project.id} className="grid sx:grid-cols-1 md:grid-cols-2 gap-4 border-b border-gray-200 transition ease-linear duration-500 delay-200">
+                            <div key={project.id} className="grid sx:grid-cols-1 lg:grid-cols-2 gap-4 border-b border-gray-200 transition ease-linear duration-500 delay-200">
                                 {project.projects.map((item) => (
                                     <div key={item.id} className="flex flex-col justify-between gap-4 pb-14 transition ease-linear duration-500 delay-200 border-b hover:border-b hover:border-primaryColor">
                                         <div className="overflow-hidden">
