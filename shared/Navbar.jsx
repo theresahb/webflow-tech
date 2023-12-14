@@ -99,7 +99,13 @@ const Navbar = ({ liColor, logo, borderColor, menuButton, menuBorder }) => {
                                         className="menu-text flex justify-between items-center cursor-pointer"
                                         onMouseEnter={() => handleItemClick(item.id)}>
                                             <p className='sx:text-base sm:text-lg mb-2'>
-                                                {item.text}
+                                                {item.link ? (
+                                                    <Link href={item.link}>
+                                                        {item.text}
+                                                    </Link>
+                                                ) : (
+                                                    <span>{item.text}</span>
+                                                )}
                                             </p>
                                             {item.content ? (
                                                 <button className={`${expandedItem === item.id && item.content ? 'rotate-180' : 'rotate-0'} flex lg:hidden outline-none`}>

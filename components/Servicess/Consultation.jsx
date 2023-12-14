@@ -1,6 +1,7 @@
 import React from 'react'
 import { consult } from '../../data/data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Consultation = () => {
     return (
@@ -24,12 +25,14 @@ const Consultation = () => {
                 <div className="flex flex-col gap-4 justify-center items-center sx:w-full sm:w-full md:w-full lg-[50%]">
                     {consult.map((item, index) => (
                         <div key={item.id} className="w-full py-7 border-b border-gray-300">
-                            <div className={`flex justify-between items-center cursor-pointer w-full consult`}>
-                                <h1 className={`head text-secondaryColor font-bold transition ease-linear duration-500 delay-200 hover:text-primaryColor sx:text-lg sm:text-xl md:text-2xl lg:text-3xl`}>{item.offer}</h1>
-                                <button className="big-arrow flex justify-center items-center w-fit">
-                                    <Image src={'/assets/arrow-dark-big.svg'} alt="" width={30} height={40} />
-                                </button>
-                            </div>
+                            <Link href={item.link}>
+                                <div className={`flex justify-between items-center cursor-pointer w-full consult`}>
+                                    <h1 className={`head text-secondaryColor font-bold transition ease-linear duration-500 delay-200 hover:text-primaryColor sx:text-lg sm:text-xl md:text-2xl lg:text-3xl`}>{item.offer}</h1>
+                                    <button className="big-arrow flex justify-center items-center w-fit">
+                                        <Image src={'/assets/arrow-dark-big.svg'} alt="" width={30} height={40} />
+                                    </button>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

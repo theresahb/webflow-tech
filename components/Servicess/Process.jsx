@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Process = () => {
-    // #2b1343
     return (
         <section>
             <div className="flex lg:justify-center lg:items-center bg-[#2b1343] py-20 sx:flex-col sx:gap-14 sx:px-4 lg:flex-row lg:gap-0 lg:px-12">

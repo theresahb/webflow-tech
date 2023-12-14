@@ -1,5 +1,6 @@
 import React from 'react'
 import { solutions } from '../../data/data'
+import Link from 'next/link'
 
 const Solutions = () => {
   return (
@@ -12,7 +13,9 @@ const Solutions = () => {
                 {solutions.map((item) => {
                     return (
                         <div key={item.id} className="flex flex-col gap-8 border-b-2 border-gray-200 pb-10 transition ease-linear duration-500 delay-100 hover:border-primaryColor">
-                            <h1 className='font-bold text-secondaryColor transition ease-linear duration-500 delay-100 cursor-pointer hover:text-primaryColor sx:text-xl sm:text-3xl md:text-5xl'>{item.text}</h1>
+                            <Link href={item.link}>
+                                <h1 className='font-bold text-secondaryColor transition ease-linear duration-500 delay-100 cursor-pointer hover:text-primaryColor sx:text-xl sm:text-3xl md:text-5xl'>{item.text}</h1>
+                            </Link>
                             <p className='font-medium text-paragraphGray'>{item.subtext}</p>
                         </div>
                     )

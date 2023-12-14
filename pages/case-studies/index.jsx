@@ -1,6 +1,6 @@
 import React from 'react'
-import MetaHead from '../shared/MetaHead/MetaHead'
-import CaseStudies from '../components/CaseStudies/CaseStudies'
+import MetaHead from '../../shared/MetaHead/MetaHead'
+import CaseStudies from '../../components/CaseStudies/CaseStudies'
 
 const Cases = () => {
     return (

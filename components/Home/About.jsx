@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -22,10 +23,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className="">
-                    <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-500 delay-100">
-                        <p>Learn More</p>
-                        <div className="">●</div>
-                    </button>
+                    <Link href={'/about-us'}>
+                        <button className="about-btn flex justify-between items-center gap-8 w-full text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-500 delay-100">
+                            <p>Learn More</p>
+                            <div className="">●</div>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="flex items-center w-full sx:flex-col sx:gap-8 lg:flex-row lg:gap-8">

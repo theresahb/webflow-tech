@@ -1,6 +1,6 @@
 import React from 'react'
-import MetaHead from '../shared/MetaHead/MetaHead'
-import Services from '../components/Servicess/Services'
+import MetaHead from '../../shared/MetaHead/MetaHead'
+import Services from '../../components/Servicess/Services'
 
 const Service = () => {
     return (

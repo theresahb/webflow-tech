@@ -45,9 +45,18 @@
   color: #180030;
 }
 
-/* .build-btn:hover {
-  background-color: white;
-} */
+.arrow:hover {
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
+}
+
+.arrow:hover .right-arrow {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(219deg) brightness(104%) contrast(101%);
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
+}
 
 .build-btn:hover p {
   color: #ffffff;
@@ -67,7 +76,7 @@
 
 .service-btn:hover .service-arrow {
   rotate: -40deg;
-  /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%); */
+  filter: invert(0%) sepia(100%) saturate(7%) hue-rotate(122deg) brightness(99%) contrast(102%);
 }
 
 .service-btn:hover .arrow-img{

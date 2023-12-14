@@ -1,6 +1,7 @@
 import React from 'react'
 import { services } from '../../data/data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Services = () => {
   return (
@@ -26,20 +27,24 @@ const Services = () => {
                                         <p className='font-medium text-paragraphGray sx:text-sm sm:text-base'>{item.subtext}</p>
                                     </div>
                                 </div>
-                                <button className="service-btn flex justify-between items-center bg-primaryColor px-5 py-4 border border-[#8000ff21] transition ease-linear duration-400 delay-100">
-                                    <p className='text-white font-medium transition ease-linear duration-400 delay-100'>Learn More</p>
-                                    <div className="service-arrow transition ease-linear duration-400 delay-100">
-                                        <Image src={'/assets/white-arrow.png'} width={10} height={10} className='arrow-img transition ease-linear duration-400 delay-100' />
-                                    </div>
-                                </button>
+                                <Link href={item.link}>
+                                    <button className="service-btn flex justify-between items-center bg-primaryColor w-full px-5 py-4 border border-[#8000ff21] transition ease-linear duration-400 delay-100">
+                                        <p className='text-white font-medium transition ease-linear duration-400 delay-100'>Learn More</p>
+                                        <div className="service-arrow transition ease-linear duration-400 delay-100">
+                                            <Image src={'/assets/white-arrow.png'} width={10} height={10} className='arrow-img transition ease-linear duration-400 delay-100' />
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         )
                     })}
                 </div>
-                <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
-                    <p>View More</p>
-                    <div className="">●</div>
-                </button>
+                <Link href={'/services'}>
+                    <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
+                        <p>View More</p>
+                        <div className="">●</div>
+                    </button>
+                </Link>
             </div>
             <div className="bg-[#2b1343] px-14 py-32 sx:px-4"
                 style={{

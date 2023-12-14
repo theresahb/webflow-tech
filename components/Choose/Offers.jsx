@@ -20,9 +20,9 @@ const Offers = () => {
                         Your expertise in IT consulting offers us a distinctive advantage that many other consulting firms lack. 
                         This specialized knowledge allows us to provide our clients with tailored solutions and insights from the competition.
                     </p>
-                    <button className="flex justify-between items-center gap-8 bg-primaryColor px-8 py-6 w-fit">
-                        <p className='bg-primaryColor text-white font-medium'>Get in Touch</p>
-                        <div className="">
+                    <button className="nav-btn sx:hidden justify-between items-center gap-8 w-fit bg-primaryColor px-8 py-6 transition ease-linear duration-500 delay-100 lg:flex">
+                        <p className='text-white font-medium'>Get in Touch</p>
+                        <div className="nav-arrow transition ease-linear duration-500 delay-100">
                             <Image src={'/assets/white-arrow.png'} width={10} height={10} />
                         </div>
                     </button>

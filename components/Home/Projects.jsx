@@ -1,6 +1,7 @@
 import React from 'react'
 import { projects } from '../../data/data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -17,10 +18,12 @@ const Projects = () => {
                         </h1>
                     </div>
                 </div>
-                <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
-                    <p>View More</p>
-                    <div className="">●</div>
-                </button>
+                <Link href={'/case-studies'}>
+                    <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
+                        <p>View More</p>
+                        <div className="">●</div>
+                    </button>
+                </Link>
             </div>
             <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
                 {projects.map((item) => {
@@ -35,12 +38,18 @@ const Projects = () => {
                                 className="w-full transition ease-linear duration-500 delay-200 hover:scale-110" />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h1 className='font-bold text-secondaryColor sx:text-xl sm:text-2xl'>{item.text}</h1>
+                                <Link href={`case-studies/${item.link}`}>
+                                    <h1 className='font-bold text-secondaryColor transition ease-linear duration-400 delay-100 sx:text-xl sm:text-2xl hover:text-primaryColor'>{item.text}</h1>
+                                </Link>
                                 <p className='font-medium text-paragraphGray sx:text-sm sm:text-base'>{item.subtext}</p>
                             </div>
-                            <div className="flex items-center gap-1 text-primaryColor font-medium">
-                                <p className='text-primaryColor hover:text-secondaryColor cursor-pointer sx:text-base sm:text-lg'>{item.category1}</p> / 
-                                <p className='text-primaryColor hover:text-secondaryColor cursor-pointer sx:text-base sm:text-lg'>{item.category2}</p>
+                            <div className="text-primaryColor font-medium">
+                                {item.categories.map((category, categoryIndex) => (
+                                    <span key={categoryIndex} className='text-lg text-primaryColor hover:text-secondaryColor sx:text-base sm:text-lg'>
+                                        <Link href={`/${category.link}`}>{category.name}</Link>
+                                        {categoryIndex < item.categories.length - 1 ? " / " : ""}
+                                    </span>
+                                ))}
                             </div>
                         </div>
                     )

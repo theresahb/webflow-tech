@@ -1,6 +1,7 @@
 import React from 'react'
 import { valueTestimonies } from '../../data/data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Testimony = () => {
   return (
@@ -18,10 +19,12 @@ const Testimony = () => {
                     </div>
                 </div>
                 <div className="">
-                    <button className="flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 rounded-full">
-                        <p>View All</p>
-                        <div className="">●</div>
-                    </button>
+                    <Link href={'/testimonials'}>
+                        <button className="about-btn flex justify-between items-center gap-8 w-full text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
+                            <p>View All</p>
+                            <div className="">●</div>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="grid gap-8 w-full sx:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
