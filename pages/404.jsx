@@ -27,8 +27,8 @@ const NotFound = () => {
                         <span className=''>4</span>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h1 className="sx:text-4xl md:text-5xl text-secondaryColor font-bold">Something’s not right.</h1>
-                        <p className="font-medium text-paragraphGray">We can’t find the page you are looking for.</p>
+                        <h1 className="sx:text-xl sm:text-5xl text-secondaryColor font-bold">Something’s not right.</h1>
+                        <p className="sx:text-sm sm:text-base font-medium text-paragraphGray">We can’t find the page you are looking for.</p>
                     </div>
                 </div>
                 <Link href={'/'}>
