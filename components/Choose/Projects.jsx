@@ -49,9 +49,9 @@ const Projects = () => {
                     </Link>
                 </div>
                 <div className="flex flex-col gap-12 w-full relative">
-                    <div className="">
+                    <div className="snap-x snap-mandatory">
                         {chooseProjects.slice(currentIndex, currentIndex + itemsPerPage).map((project) => (
-                            <div key={project.id} className="grid sx:grid-cols-1 lg:grid-cols-2 gap-4 border-b border-gray-200 transition ease-linear duration-500 delay-200">
+                            <div key={project.id} className="snap-center grid sx:grid-cols-1 lg:grid-cols-2 gap-4 border-b border-gray-200 transition ease-linear duration-500 delay-200">
                                 {project.projects.map((item) => (
                                     <div key={item.id} className="flex flex-col justify-between gap-4 pb-14 transition ease-linear duration-500 delay-200 border-b hover:border-b hover:border-primaryColor">
                                         <div className="overflow-hidden">
