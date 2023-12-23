@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const NotFound = () => {
     // const router = useRouter()
@@ -12,11 +13,32 @@ const NotFound = () => {
     // }, [])
 
     return (
-        <div className='flex flex-col gap-4 justify-center items-center text-center h-screen bg-[#180030f3] text-white'>
-            <h1 className='text-5xl font-semibold'>Oooops...</h1>
-            <h2 className='text-3xl font-semibold'>That page cannot be found</h2>
-            <p className='text-2xl font-semibold'>Go back to the <Link href='/' className='text-[#4979ff] underline'>Homepage</Link></p>
-        </div>
+        <section>
+            <div className="flex flex-col justify-center items-center gap-8 h-screen">
+                <div className="">
+                    <Image src={'/assets/logo.svg'} width={50} height={50} className='w-[7rem]' />
+                </div>
+                <div className="flex flex-col justify-center items-center text-center mb-8">
+                    <div className="flex items-center sx:text-6xl md:text-[10rem] font-bold text-primaryColor">
+                        <span className=''>4</span>
+                        <div className="">
+                            <Image src={'/assets/globe404.svg'} width={50} height={50} className='sx:w-[3rem] md:w-[10rem]' />
+                        </div>
+                        <span className=''>4</span>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <h1 className="sx:text-4xl md:text-5xl text-secondaryColor font-bold">Something’s not right.</h1>
+                        <p className="font-medium text-paragraphGray">We can’t find the page you are looking for.</p>
+                    </div>
+                </div>
+                <Link href={'/'}>
+                    <button className="about-btn flex justify-between items-center gap-8 text-white bg-primaryColor font-medium px-6 py-3 border border-primaryColor rounded-full transition ease-linear duration-400 delay-100">
+                        <p>Back to Homepage</p>
+                        <div className="">●</div>
+                    </button>
+                </Link>
+            </div>
+        </section>
     )
 }
 

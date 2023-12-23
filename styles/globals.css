@@ -9,12 +9,12 @@
 }
 
 .partners {
-  animation: animate 5s linear infinite;
+  animation: scroll-left 15s linear infinite;
   /* animation-delay: -40s; */
 }
 .testimony {
   animation: animate 20s linear infinite;
-  animation-delay: -40s;
+  animation-delay: 0s;
 }
 
 .white {
@@ -31,6 +31,9 @@
 
 .nav-btn:hover .nav-arrow {
   rotate: -40deg;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
 }
 
 .about-btn:hover {
@@ -110,13 +113,23 @@ input[type=number]::-webkit-outer-spin-button {
   filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(103%) contrast(100%);
 }
 
-@keyframes animate {
+@keyframes scroll-left {
   0% {
-    transform: translateX(100);
+    transform: translateX(270%);
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(-130%);
   }
 }
 

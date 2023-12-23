@@ -22,6 +22,8 @@ import project3 from '../public/assets/project3.jpg'
 import project4 from '../public/assets/project4.jpg'
 import project5 from '../public/assets/project5.jpg'
 import project6 from '../public/assets/project6.jpg'
+import project7 from '../public/assets/digital-image.jpg'
+import project8 from '../public/assets/perfect-image.jpg'
 
 import executive1 from '../public/assets/executive1.webp'
 import executive2 from '../public/assets/executive2.webp'
@@ -627,6 +629,99 @@ export const projects = [
         ],
         flag: franceflag,
     },
+]
+
+
+
+export const caseCategories = {
+    case1 : [
+        {
+            id: 1,
+            image: project6,
+            text: 'XYZ - Streamlining Operations',
+            link: 'xyz-streamlining-operations',
+            subtext: `Discover how our IT consulting agency revolutionized XYZ Corporation's operations with a custom dashboard, 
+                    providing real-time insights, reducing downtime.`,
+            categories: [
+                { name: "Development", link: "development" },
+                { name: "Design", link: "design" },
+            ],
+            type: ['Development', 'Design'],
+        },
+        {
+            id: 2,
+            image: project5,
+            text: 'Enhancing Market Reach with E-commerce Integration',
+            link: 'enhancing-market-reach-with-e-commerce-integration',
+            subtext: `Our IT consulting firm successfully enabled ABC Retailers to embrace e-commerce, significantly enhancing their 
+                    market presence and revenue.`,
+            categories: [
+                { name: "IT Consultancy", link: "it-consultancy" },
+                { name: "Development", link: "development" },
+            ],
+            type: ['IT Consultancy', 'Development'],
+        },
+        {
+            id: 3,
+            image: project3,
+            text: 'Onson - marketing agency website',
+            link: 'onson-marketing-agency-website',
+            subtext: `Our team of experienced professionals is dedicated to providing exceptional web design, development, and marketing services.`,
+            categories: [
+                { name: "Design", link: "design" },
+                { name: "IT Consultancy", link: "it-consultancy" },
+            ],
+            type: ['IT Consultancy', 'Design'],
+        },
+    ],
+
+    case2 : [
+        {
+            id: 1,
+            image: project4,
+            text: 'Modernizing Supply Chain Management',
+            link: 'modernizing-supply-chain-management',
+            subtext: `Our development service firm to achieve their goal of modernizing their supply chain management processes.`,
+            categories: [
+                { name: "IT Consultancy", link: "it-consultancy" },
+                { name: "Design", link: "design" },
+            ],
+            type: ['IT Consultancy', 'Design'],
+        },
+        {
+            id: 2,
+            image: project7,
+            text: "Digital Transformation for HealthTech Innovators",
+            link: 'xyz-streamlining-operations',
+            subtext:
+            "Our digital transformation consultancy successfully collaborated with MediTech Innovations to achieve their vision of a secure and efficient health data platform.",
+            categories: [
+                { name: "Design", link: "design" },
+                { name: "Development", link: "development" },
+            ],
+            type: ['Design', 'Development'],
+        },
+        {
+            id: 3,
+            image: project8,
+            text: "PicturePerfect Photography - photography business ",
+            link: 'xyz-streamlining-operations',
+            subtext:
+            "Our team of experienced professionals is dedicated to providing exceptional web design, development, and marketing services.",
+            categories: [
+                { name: "Development", link: "development" },
+                { name: "IT Consultancy", link: "it-consultancy" },
+            ],
+            type: ['Development', 'IT Consultancy'],
+        },
+    ]
+}
+
+export const filterCategories = [
+    { text: "All", value: "all" },
+    { text: "Design", value: "design" },
+    { text: "Development", value: "development" },
+    { text: "IT Consultancy", value: "it-consultancy" },
 ]
 
 export const testimonies = [

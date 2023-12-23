@@ -7,10 +7,8 @@ const Partners = () => {
     return (
         <section>
             <div className="flex flex-col justify-center items-center gap-8 bg-gray-100 px-24 py-16 overflow-hidden">
-                <div className="">
-                <div className="flex gap-8 items-center overflow-hidden w-full">
+                <div className="flex gap-8 items-center overflow-hidden w-[180%]">
                     {companies.map((item, index) => (
-                        
                         <div key={item.id} className="partners w-[10rem]">
                             <Image 
                             src={item.image}
@@ -18,9 +16,7 @@ const Partners = () => {
                             height={'100%'}
                             />
                         </div>
-                        
                     ))}
-                </div>
                 </div>
             </div>
         </section>

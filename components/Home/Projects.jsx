@@ -46,7 +46,7 @@ const Projects = () => {
                             <div className="text-primaryColor font-medium">
                                 {item.categories.map((category, categoryIndex) => (
                                     <span key={categoryIndex} className='text-lg text-primaryColor hover:text-secondaryColor sx:text-base sm:text-lg'>
-                                        <Link href={`/${category.link}`}>{category.name}</Link>
+                                        <Link href={`case-studies-categories/${category.link}`}>{category.name}</Link>
                                         {categoryIndex < item.categories.length - 1 ? " / " : ""}
                                     </span>
                                 ))}
