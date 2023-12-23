@@ -13,7 +13,7 @@ const Testimony = () => {
                     Our success is intertwined with the success of each individual and company we proudly call our customers.
                 </p>
             </div>
-            <div className="overflow-hidden w-[180%]">
+            <div className="overflow-hidden sx:w-[200%] sm:w-[180%]">
                 <div className="grid grid-cols-5 grid-rows-1 gap-8 sx:w-[200%] lg:w-full overflow-hidden">
                     {testimonies.map((item) => {
                         return (
